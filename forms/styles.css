@@ -31,6 +31,26 @@ label {
   color: #6f7482;
 }
 
+.error-message {
+  display: block;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #ed0131;
+}
+
+.success-message {
+  display: none;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #0e6245;
+}
+
 input[type="email"] {
   margin-bottom: 25px;
   padding: 10px;
@@ -62,6 +82,14 @@ input[type="email"]:invalid {
 
 input[type="email"]:valid {
   outline: 1px solid #0e6245;
+}
+
+input[type="email"]:valid ~ .error-message {
+  display: none;
+}
+
+input[type="email"]:valid ~ .success-message {
+  display: block;
 }
 
 input[type="email"]::placeholder {
