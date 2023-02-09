@@ -15,7 +15,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   width: 1024px;
-  height: 1667px;
+  /* height: 1667px; */
 }
 
 h1 {
@@ -29,10 +29,15 @@ ul {
   padding: 0;
 }
 
-aside {
+.wrapper {
   position: fixed;
+  height: 100%;
+  overflow: auto;
+}
 
+aside {
   padding-top: 58px;
+  padding-bottom: 20px;
   flex-basis: 385px;
   background-color: #86a3b4;
 }
